@@ -1,0 +1,55 @@
+{
+  "updatedAt": "2026-08-23T18:54:44.809Z",
+  "threats": [
+    {
+      "id": "feodo-162.243.103.246:8080",
+      "type": "c2_server",
+      "indicator": "162.243.103.246:8080",
+      "lat": 0,
+      "lon": 0,
+      "country": "US",
+      "severity": "high",
+      "malwareFamily": "Emotet"
+    },
+    {
+      "id": "feodo-50.16.16.211:443",
+      "type": "c2_server",
+      "indicator": "50.16.16.211:443",
+      "lat": 0,
+      "lon": 0,
+      "country": "US",
+      "severity": "high",
+      "malwareFamily": "QakBot"
+    },
+    {
+      "id": "feodo-34.204.119.63:443",
+      "type": "c2_server",
+      "indicator": "34.204.119.63:443",
+      "lat": 0,
+      "lon": 0,
+      "country": "US",
+      "severity": "high",
+      "malwareFamily": "QakBot"
+    },
+    {
+      "id": "feodo-178.62.3.223:443",
+      "type": "c2_server",
+      "indicator": "178.62.3.223:443",
+      "lat": 0,
+      "lon": 0,
+      "country": "GB",
+      "severity": "high",
+      "malwareFamily": "QakBot"
+    },
+    {
+      "id": "feodo-27.133.154.218:443",
+      "type": "c2_server",
+      "indicator": "27.133.154.218:443",
+      "lat": 0,
+      "lon": 0,
+      "country": "JP",
+      "severity": "high",
+      "malwareFamily": "QakBot"
+    }
+  ]
+}

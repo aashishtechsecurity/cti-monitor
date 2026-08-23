@@ -1,0 +1,77 @@
+{
+  "updatedAt": "2026-08-23T23:51:00.000Z",
+  "groups": [
+    {
+      "id": "apt28",
+      "name": "APT28 (Fancy Bear)",
+      "origin": "Russia",
+      "originCoords": [37.61, 55.75],
+      "targetCountries": ["US", "DE", "IN", "UA", "UK", "FR"],
+      "targetSectors": ["Defense", "Government", "Energy", "Financial"],
+      "malwareUsed": ["Cobalt Strike", "Zebrocy", "X-Agent"],
+      "ransomwareAffiliations": ["LockBit 3.0"],
+      "description": "Espionage & destructive cyber operations targeting government, defense, and energy sectors.",
+      "mitreLink": "https://attack.mitre.org/groups/G0007/"
+    },
+    {
+      "id": "volt_typhoon",
+      "name": "Volt Typhoon",
+      "origin": "China",
+      "originCoords": [116.40, 39.90],
+      "targetCountries": ["US", "IN", "JP", "SG", "GU"],
+      "targetSectors": ["Critical Infrastructure", "Telecommunications", "Ports", "Power Grid"],
+      "malwareUsed": ["KV-Botnet", "FastReverse", "Chisel"],
+      "ransomwareAffiliations": ["Akira"],
+      "description": "State-sponsored cyber group targeting critical infrastructure for pre-positioning and disruption.",
+      "mitreLink": "https://attack.mitre.org/groups/G1017/"
+    },
+    {
+      "id": "sidewinder",
+      "name": "SideWinder (Rattlesnake)",
+      "origin": "South Asia",
+      "originCoords": [77.20, 28.61],
+      "targetCountries": ["IN", "PK", "SA", "LK", "BD", "NP"],
+      "targetSectors": ["Military", "Government", "Defense", "Foreign Affairs"],
+      "malwareUsed": ["WarHawk", "SideStealer", "Powerless"],
+      "ransomwareAffiliations": [],
+      "description": "Advanced persistent threat actor focusing on defense and military intelligence targets across Asia.",
+      "mitreLink": "https://attack.mitre.org/groups/G0121/"
+    },
+    {
+      "id": "lazarus",
+      "name": "Lazarus Group (HIDDEN COBRA)",
+      "origin": "North Korea",
+      "originCoords": [125.75, 39.03],
+      "targetCountries": ["US", "IN", "JP", "SG", "KR", "UK"],
+      "targetSectors": ["Financial Services", "Cryptocurrency", "Defense", "Aerospace"],
+      "malwareUsed": ["FASTCash", "AppleJeus", "BLINDINGCAN"],
+      "ransomwareAffiliations": ["TraderTraitor", "WannaCry variants"],
+      "description": "Financially motivated APT group engaging in cryptocurrency theft, banking heists, and ransomware extortion.",
+      "mitreLink": "https://attack.mitre.org/groups/G0032/"
+    },
+    {
+      "id": "lockbit_gang",
+      "name": "LockBit 3.0 Ransomware Group",
+      "origin": "Eastern Europe",
+      "originCoords": [30.52, 50.45],
+      "targetCountries": ["US", "DE", "IN", "UK", "FR", "JP", "BR"],
+      "targetSectors": ["Logistics", "Healthcare", "Manufacturing", "Finance"],
+      "malwareUsed": ["LockBit Black", "StealBit"],
+      "ransomwareAffiliations": ["LockBit 3.0"],
+      "description": "Prolific Ransomware-as-a-Service (RaaS) operation targeting global commercial and critical infrastructure.",
+      "mitreLink": "https://attack.mitre.org/software/S1068/"
+    },
+    {
+      "id": "akira_gang",
+      "name": "Akira Ransomware Group",
+      "origin": "Eastern Europe",
+      "originCoords": [21.01, 52.23],
+      "targetCountries": ["US", "CA", "UK", "DE", "IN", "FR"],
+      "targetSectors": ["Manufacturing", "Education", "Healthcare", "Real Estate"],
+      "malwareUsed": ["Akira Linux", "Akira Rust"],
+      "ransomwareAffiliations": ["Akira"],
+      "description": "Double-extortion ransomware gang exploiting Cisco VPN vulnerabilities to breach enterprise networks.",
+      "mitreLink": "https://attack.mitre.org/software/S1134/"
+    }
+  ]
+}

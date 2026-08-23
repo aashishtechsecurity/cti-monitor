@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Threat Intelligence Monitor</title>
+  <link rel="stylesheet" href="/src/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.0.0/dist/maplibre-gl.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Header Navbar -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🛡️</span>
+        <span class="logo-title">CYBER THREAT INTEL MONITOR</span>
+      </div>
+
+      <div class="header-controls">
+        <button id="btn-export-ciso-brief" class="btn-refresh" style="background: rgba(239,68,68,0.15); border-color: var(--accent-red); color: var(--accent-red);" title="Generate Executive CISO CTI Briefing Report">
+          📄 Executive CISO Brief
+        </button>
+
+        <button id="btn-manual-refresh" class="btn-refresh" title="Manually re-fetch all live CTI feeds">
+          <span class="spin-icon">🔄</span> Refresh Feeds
+        </button>
+
+        <div class="auto-refresh-group">
+          <label for="auto-refresh-select" style="font-size: 10px; color: var(--text-muted); font-family: var(--font-mono);">Auto:</label>
+          <select id="auto-refresh-select" class="select-refresh">
+            <option value="60">1 min</option>
+            <option value="300" selected>5 mins</option>
+            <option value="900">15 mins</option>
+            <option value="0">Off</option>
+          </select>
+          <span id="countdown-badge" class="countdown-badge">05:00</span>
+        </div>
+
+        <div class="status-badge" style="padding: 2px 6px; background: rgba(239,68,68,0.15); border: 1px solid rgba(239,68,68,0.3); border-radius: 4px; color: #f87171;">
+          <span class="dot live" style="background-color: var(--accent-red); box-shadow: 0 0 8px var(--accent-red);"></span>
+          <span id="status-text" style="font-weight: bold;">DEFCON 2: HIGH READINESS</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main CTI Dashboard Grid -->
+    <main class="dashboard-grid">
+      <!-- Left Column: Map, ACH Attribution, Watchlist, Threat Graph, pDNS Pivot, Toolbox, MITRE & Exporter -->
+      <section class="left-column">
+        <div id="map-container" class="panel map-panel"></div>
+        <div id="ach-attribution-container" class="panel"></div>
+        <div id="watchlist-alert-container" class="panel"></div>
+        <div id="apt-targeting-container" class="panel"></div>
+        <div id="pdns-pivot-container" class="panel"></div>
+        <div id="threat-graph-container" class="panel"></div>
+        <div id="toolbox-container" class="panel"></div>
+        <div id="mitre-container" class="panel"></div>
+        <div id="exporter-container" class="panel"></div>
+      </section>
+
+      <!-- Right Column: Timeline, CERT, Policy, Feeds, Dark Web, Ransomware, Heatmap & KEV EPSS -->
+      <section class="right-column">
+        <div id="threat-timeline-container" class="panel"></div>
+        <div id="ransomware-container" class="panel"></div>
+        <div id="darkweb-container" class="panel"></div>
+        <div id="cert-advisories-container" class="panel"></div>
+        <div id="sector-heatmap-container" class="panel"></div>
+        <div id="cisa-kev-container" class="panel"></div>
+        <div id="cyber-policy-container" class="panel"></div>
+        <div id="news-container" class="panel"></div>
+      </section>
+    </main>
+
+    <!-- Full-Width Bottom Section: Cloud & Infrastructure Outages -->
+    <footer class="bottom-section">
+      <div id="outages-container" class="panel"></div>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

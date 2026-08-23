@@ -1,0 +1,245 @@
+{
+  "updatedAt": "2026-08-23T18:54:47.327Z",
+  "news": [
+    {
+      "title": "TikTok Agrees to $400 Million Settlement in U.S. Child Privacy Lawsuit",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/tiktok-agrees-to-400-million-settlement.html",
+      "pubDate": "22/8/2026"
+    },
+    {
+      "title": "14 Trojanized npm Packages Drop RedC2 4.0 Linux Backdoor With AI-Assisted C2",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/14-trojanized-npm-packages-drop-redc2.html",
+      "pubDate": "22/8/2026"
+    },
+    {
+      "title": "Microsoft Defender's Own Driver Can Be Weaponized to Delete Security Software at Boot",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/microsoft-defenders-own-driver-can-be.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Android Car Malware Spreads Through Built-In Updaters for Ad Fraud, Proxy Botnet",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/android-car-malware-spreads-through.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Wazuh and AI For Enhanced SOC Workflows",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/wazuh-and-ai-for-enhanced-soc-workflows.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Cisco Patches Nine Crosswork and Secure Workload Flaws, Five Scoring CVSS 10.0",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/cisco-patches-nine-crosswork-and-secure.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "GitLab CVE-2026-19478 Comes Under Active Exploitation Within Days of Disclosure",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/gitlab-cve-2026-19478-comes-under.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Microsoft Patches Severe Entra ID Flaw (CVSS 10.0) Allowing Remote Code Execution",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/microsoft-entra-id-flaw-cvss-100.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Rust Supply Chain Attack Puts Build-Time Malware in Crates with 245 Million Downloads",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Suspected Russian Hackers Abuse Google OAuth and WhatsApp Linking to Hijack Accounts",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/08/suspected-russian-hackers-abuse-google.html",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "ToxicPanda Android malware uses VPN permissions to block Google Play",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/security/toxicpanda-android-malware-uses-vpn-permissions-to-block-google-play/",
+      "pubDate": "23/8/2026"
+    },
+    {
+      "title": "Hackers infect Android car head units with proxy botnet malware",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-infect-android-car-head-units-with-proxy-botnet-malware/",
+      "pubDate": "22/8/2026"
+    },
+    {
+      "title": "Named Pipes Under Attack: Securing Windows Interprocess Communication",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/security/named-pipes-under-attack-securing-windows-interprocess-communication/",
+      "pubDate": "22/8/2026"
+    },
+    {
+      "title": "New SynkLoader malware pushed in Microsoft Teams phishing campaign",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-synkloader-malware-pushed-in-microsoft-teams-phishing-campaign/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Hundreds of leaked AWS keys give full control over corporate accounts",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/security/hundreds-of-leaked-aws-keys-give-full-control-over-corporate-accounts/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Microsoft blames Windows gaming issues on RGB lighting devices",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-blames-windows-gaming-issues-on-rgb-lighting-devices/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Is Online Privacy Possible? How Digital Identities Can Help",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/security/is-online-privacy-possible-how-digital-identities-can-help/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Microsoft rolls out Classic Outlook theme for New Outlook users",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-classic-outlook-theme-for-new-outlook-users/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "CISA orders feds to patch actively exploited TrueConf Server flaws",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-trueconf-server-flaws/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Microsoft patches max severity code execution, privilege escalation flaws",
+      "source": "Bleeping Computer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-max-severity-entra-id-flaw-exploited-in-attacks/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "How an Emerging Industrial Protocol Family Could Put OT at Risk",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/ics-ot-security/how-emerging-industrial-protocol-family-put-ot-at-risk",
+      "pubDate": "22/8/2026"
+    },
+    {
+      "title": "OWASP Flags Top AI Skill Risks in New Security Blueprint",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/owasp-flags-top-ai-skill-risks-security-blueprint",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Calling on Cyber Pros to Help Defend City Hall",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/cyber-pros-help-city-hall",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "OpenAI Adds Controls That Should've Been There Already",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/openai-adds-controls-already",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Hardware Makers Implement Post-Quantum Cryptography as Security Threats Near",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/hardware-makers-implement-post-quantum-cryptography",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "New CUSTODY Framework Constrains AI Agents Inside the Network",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/perimeter/new-custody-framework-constrains-ai-agents-inside-network",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "What We Missed: Delta Flight Disrupted With Wi-Fi Hack",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/delta-flight-disrupted-wi-fi-hack",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "N-able Bug Exposes Password Vault Master Keys",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/n-able-bug-password-vault-master-keys",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "Money and Mindset: The Two Biggest Roadblocks to Cyber Policing",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-operations/money-and-mindset-the-two-biggest-roadblocks-to-cyber-policing",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "Pakistan's Transparent Tribe Refreshes Toolset for Afghan Cyberattacks",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/pakistan-transparent-tribe-afghan-cyberattacks",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "North Korean Hackers Tied to Rust Supply Chain Attack",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/north-korean-rust-supply-chain/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "New Agent Tesla Malware Variant Boosts Evasion Capabilities",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/agent-tesla-malware-evasion/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "Cybersecurity Job Ads Requiring AI Skills Double",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/cybersecurity-job-ads-ai-skills/",
+      "pubDate": "21/8/2026"
+    },
+    {
+      "title": "NCSC Urges Stronger Controls for Agentic AI Systems",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/ncsc-stronger-controls-agentic-ai/",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "US Defense Contractors Admit Their Rising CMMC Scores May Not Be Accurate",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/us-defense-contractors-cmmc-scores/",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "ICS Operators Warned of AI-Driven Attacks on Siemens PLCs",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/ics-ai-attacks-siemens/",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "Updated ToxicPanda Variant Targets 140+ Banking and Crypto Apps",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/updated-toxicpanda-140-banking/",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "Def Con Attendees Targeted by Persistent Phishing Campaign",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/def-con-attendees-persistent/",
+      "pubDate": "20/8/2026"
+    },
+    {
+      "title": "Exclusive: Linux Foundation's Akrites to Go Live in September",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/linux-foundations-akrites-go-live/",
+      "pubDate": "19/8/2026"
+    },
+    {
+      "title": "MaaS Campaign Combines ClickFix, ErrTraffic and Cruciferra",
+      "source": "Infosecurity Magazine",
+      "url": "https://www.infosecurity-magazine.com/news/maas-clickfix-errtraffic-cruciferra/",
+      "pubDate": "19/8/2026"
+    }
+  ]
+}
