@@ -7,6 +7,7 @@ on:
   push:
     branches:
       - main
+      - mark-1
 
 permissions:
   contents: write
@@ -29,18 +30,15 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: 'cti-monitor/package-lock.json'
+          cache-dependency-path: 'package-lock.json'
 
       - name: Install Dependencies
-        working-directory: ./cti-monitor
         run: npm ci
 
       - name: Aggregate CTI Feeds
-        working-directory: ./cti-monitor
         run: node scripts/generate-cti-feeds.mjs
 
       - name: Build Web Application
-        working-directory: ./cti-monitor
         run: npm run build
 
       - name: Setup Pages
@@ -49,7 +47,7 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './cti-monitor/dist'
+          path: './dist'
 
       - name: Deploy to GitHub Pages
         id: deployment
