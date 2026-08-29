@@ -21,6 +21,29 @@
   --font-mono: 'Fira Code', 'Courier New', monospace;
 }
 
+/* Light Theme Variables */
+body.light-theme {
+  --bg-color: #f1f5f9;
+  --panel-bg: rgba(255, 255, 255, 0.95);
+  --border-color: rgba(2, 132, 199, 0.25);
+  --border-glow: rgba(2, 132, 199, 0.5);
+
+  --neon-cyan: #0284c7;
+  --neon-purple: #7e22ce;
+  --neon-magenta: #be185d;
+  --neon-green: #15803d;
+  --neon-amber: #b45309;
+  --neon-red: #dc2626;
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-dim: #94a3b8;
+
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(2, 132, 199, 0.08) 0%, transparent 60%),
+    linear-gradient(to bottom, #f8fafc, #e2e8f0);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -38,12 +61,120 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+/* Ingestion Splash Screen Overlay */
+.splash-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(3, 7, 18, 0.96);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+body.light-theme .splash-overlay {
+  background: rgba(241, 245, 249, 0.96);
+}
+
+.splash-overlay.fade-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.splash-content {
+  width: 90%;
+  max-width: 520px;
+  padding: 24px;
+  background: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
+  text-align: center;
+}
+
+.splash-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--font-hud);
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--neon-cyan);
+}
+
+.splash-subtitle {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+
+.ingestion-checklist {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  font-size: 10px;
+  font-family: var(--font-mono);
+}
+
+.ingestion-item {
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.ingestion-item.done {
+  border-color: var(--neon-green);
+  color: var(--text-main);
+  background: rgba(0, 255, 157, 0.08);
+}
+
+.splash-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 14px;
+}
+
+.splash-progress-fill {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-cyan), var(--neon-green));
+  transition: width 0.3s ease;
+}
+
+.splash-progress-text {
+  font-size: 10px;
+  font-family: var(--font-hud);
+  color: var(--neon-cyan);
+  margin-top: 8px;
+  font-weight: 700;
 }
 
 /* Header Navbar */
@@ -60,6 +191,12 @@ body {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(12px);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-theme .header {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.1);
 }
 
 .logo {
@@ -147,6 +284,10 @@ body {
   border-radius: 4px;
 }
 
+body.light-theme .auto-refresh-group {
+  background: rgba(241, 245, 249, 0.8);
+}
+
 .select-refresh {
   background: transparent;
   border: none;
@@ -160,6 +301,10 @@ body {
 .select-refresh option {
   background: #060b16;
   color: #fff;
+}
+body.light-theme .select-refresh option {
+  background: #fff;
+  color: #000;
 }
 
 .countdown-badge {
@@ -227,8 +372,12 @@ body {
   flex-direction: column;
   position: relative;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5), inset 0 0 15px rgba(0, 240, 255, 0.03);
-  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease, background 0.3s ease;
 }
+body.light-theme .panel {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
 .panel:hover {
   border-color: rgba(0, 240, 255, 0.45);
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 240, 255, 0.12);
@@ -273,6 +422,10 @@ body {
   align-items: center;
   justify-content: space-between;
   text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+body.light-theme .panel-header {
+  background: linear-gradient(90deg, rgba(2, 132, 199, 0.1) 0%, rgba(248, 250, 252, 0.8) 100%);
 }
 
 .panel-body {

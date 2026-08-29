@@ -8,6 +8,40 @@
   <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.0.0/dist/maplibre-gl.css" />
 </head>
 <body>
+  <!-- High-Tech Data Ingestion Splash Overlay -->
+  <div id="splash-screen" class="splash-overlay">
+    <div class="splash-content">
+      <div class="splash-logo">
+        <span class="logo-icon">🛡️</span>
+        <span class="splash-title">CYBER THREAT INTEL MONITOR</span>
+      </div>
+      <div class="splash-subtitle">INITIALIZING LIVE CTI FEED INGESTION PIPELINES</div>
+
+      <div class="ingestion-checklist">
+        <div class="ingestion-item" id="ingest-ransomlook">
+          <span class="status-icon">⏳</span> <span>Ingesting Ransomlook.io API (50 Ransom Victim Disclosures)</span>
+        </div>
+        <div class="ingestion-item" id="ingest-feodo">
+          <span class="status-icon">⏳</span> <span>Fetching Feodo Tracker Botnet C2 IP Blocklist (300 Hosts)</span>
+        </div>
+        <div class="ingestion-item" id="ingest-kev">
+          <span class="status-icon">⏳</span> <span>Syncing CISA KEV Vulnerabilities & FIRST EPSS Exploit Scores</span>
+        </div>
+        <div class="ingestion-item" id="ingest-rss">
+          <span class="status-icon">⏳</span> <span>Parsing RSS Streams (The Hacker News, BleepingComputer)</span>
+        </div>
+        <div class="ingestion-item" id="ingest-india">
+          <span class="status-icon">⏳</span> <span>Loading Survey of India Sovereign Boundary Geometry</span>
+        </div>
+      </div>
+
+      <div class="splash-progress-bar">
+        <div id="splash-progress-fill" class="splash-progress-fill"></div>
+      </div>
+      <div id="splash-progress-text" class="splash-progress-text">INGESTING DATA... 0%</div>
+    </div>
+  </div>
+
   <div id="app">
     <!-- Header Navbar -->
     <header class="header">
@@ -17,6 +51,10 @@
       </div>
 
       <div class="header-controls">
+        <button id="btn-toggle-theme" class="btn-refresh" title="Toggle Dark / Light Visual Theme">
+          🌙 Dark
+        </button>
+
         <button id="btn-export-ciso-brief" class="btn-refresh" style="background: rgba(239,68,68,0.15); border-color: var(--accent-red); color: var(--accent-red);" title="Generate Executive CISO CTI Briefing Report">
           📄 Executive CISO Brief
         </button>
